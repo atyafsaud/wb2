@@ -31,9 +31,9 @@ connection.connect(function(err) {
 
 
 //app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/login'));
+app.use(express.static(__dirname + '/form'));
 app.get('/', function(req, res,next) {  
-    res.sendFile(__dirname + '/login/register.html');
+    res.sendFile(__dirname + '/form/form.html');
 });
 
 
